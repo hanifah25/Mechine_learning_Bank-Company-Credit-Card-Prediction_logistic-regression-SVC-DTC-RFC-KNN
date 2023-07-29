@@ -1,20 +1,3 @@
-# Problem Statement
-Dataset memberikan informasi penggunaan kartu kredit selama 6 bulan terakhir. Tujuan utamanya adalah menganalisis pola penggunaan kartu kredit dan memahami perilaku belanja pelanggan.
-
-# Objective
-* Menentukan saldo rata-rata yang dipertahankan nasabah dan mengidentifikasi kelompok nasabah yang mempertahankan saldo tinggi.
-* Untuk mengidentifikasi pelanggan yang sering melakukan pembelian menggunakan kartu kredit mereka dan jumlah yang dihabiskan untuk pembelian tersebut.
-* Untuk menganalisis batas kredit yang diberikan kepada pelanggan dan mengidentifikasi pelanggan yang melebihi batas kreditnya.
-
-# Overall analysis 	
-Kategori pengguna kartu kredit:
- • Cluster 0 = diatas rata-rata
- • Cluster 1 = menengah
- • Cluster 2 = dibawah rata-rata
-
-Pada Cluster 0, credit limit yang tinggi dan frequency melakukan transaksi pembelian sangat rendah. 
-Pada Cluster 1, credit limit yang tinggi dan frequency melakukan transaksi pembelian sangat tinggi.
-Pada Cluster 2, credit limit yang paling rendah dan frequency melakukan transaksi pembelian cukup tinggi.
 --- keterangan kolom
 
 * LIMIT_BAL: Jumlah kredit yang diberikan, termasuk kredit individu dan tambahan.
