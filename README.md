@@ -1,4 +1,17 @@
---- keterangan kolom
+## Mechine_learning_Bank-Company-Credit-Card-Prediction_logistic-regression-SVC-DTC-RFC-KNN
+
+## Problem Statement
+model Classification untuk memprediksi default_payment_next_month dalam Prediksi pembayaran tertunda kartu kredit.
+
+## Objective
+Prediksi pembayaran tertunda: Berdasarkan riwayat pembayaran kartu kredit sebelumnya, dapat diprediksi apakah seseorang akan membayar tagihan kartu kredit mereka pada waktu yang tepat atau akan terlambat. Jika seseorang cenderung terlambat membayar tagihan, bank penerbit kartu kredit dapat mengambil tindakan preventif, seperti mengirimkan pemberitahuan, menyesuaikan batas kredit atau jika memang tidak membayar berkelanjutan akan disuspend.
+
+## Result 
+best model: nb
+cross-val mean: 0.34072995534847605
+Cross validation Metrik yang digunakan untuk evaluasi adalah recall, dan skema cross-validation yang digunakan adalah Stratified K-Fold. Pada setiap iterasi, code akan menghitung nilai recall pada data train yang dipartisi menggunakan skema Stratified K-Fold. Setelah selesai melakukan cross validation pada masing-masing model, code akan menampilkan nilai recall rata-rata dan standar deviasi pada setiap fold, serta menampilkan rentang nilai recall yang dihasilkan pada setiap model.juga membandingkan nilai recall rata-rata dari semua model dan memilih model yang memiliki nilai recall rata-rata tertinggi sebagai model terbaik. dari data di atas dapat kita lihat best model dari hasil prediksi adalah nb dengan nilai cross-val mean: 0.34. namun dalam hal ini NB cenderung tidak efektif pada dataset yang tidak seimbang, di mana jumlah sampel pada setiap kelas tidak seimbang dan Model GaussianNB tidak memiliki hyperparameter yang signifikan yang dapat diatur secara manual, maka dari itu untuk dalam pemodelan prediksi lebih lanjut akan di gunakan model SCV yang lebih cocok untuk data set ini.
+
+## keterangan kolom
 
 * LIMIT_BAL: Jumlah kredit yang diberikan, termasuk kredit individu dan tambahan.
 * SEX: Jenis kelamin pelanggan (1 = pria, 2 = wanita)
